@@ -2,7 +2,7 @@ import React from 'react';
 import ph1 from '../assets/img/ph1.webp'
 import ph2 from '../assets/img/ph2.jpg'
 import ph3 from '../assets/img/ph3.jpg'
-import ph4 from '../assets/img/ph4.jpg'
+import ph4 from '../assets/img/ph6.jpg'
 import ph5 from '../assets/img/ph5.webp'
 import CardItem from "./CardItem";
 import './Cards.css'

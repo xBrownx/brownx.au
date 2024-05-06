@@ -1,11 +1,11 @@
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Resume from "./pages/Resume";
-import projects from "./pages/Projects";
-import Projects from "./pages/Projects";
-import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Resume from "./components/pages/Resume";
+import projects from "./components/pages/Projects";
+import Projects from "./components/pages/Projects";
+import Blog from "./components/pages/Blog";
+import Contact from "./components/pages/Contact";
 
 import { Route, Routes }  from "react-router-dom";
 
