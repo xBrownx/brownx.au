@@ -1,50 +1,53 @@
 import React, {useEffect, useState} from 'react';
+import styles from './home.module.css'
 import './Home.css'
+import '../components/Cards.css';
+import head1 from '../assets/img/h1.png'
+import head2 from '../assets/img/h2.png'
 import {ReactComponent as Logo} from '../assets/img/logo.svg';
-import {ReactComponent as Icon} from '../assets/img/iconsvg.svg';
+import Cards from "../components/Cards";
+
 
 function Home() {
 
-    const [logoHeight, setLogoHeight] = useState('100%');
-    const [logoWidth, setLogoWidth] = useState('100%');
-
-    const [textSize, setTextSize] = useState('25em');
-    const [textVisible, setTextVisible] = useState(0);
-
+    const [landingLogoVis, setLandingLogoVis] = useState(1)
     useEffect(() => {
-        setLogoHeight('9vh')
-        setLogoWidth('16vh')
-        setTextVisible(1)
+        setLandingLogoVis(0)
+
     }, [])
+
     return (
-        <div className='main'>
-            <div className="container">
-                <div className="logo-container">
-                    <Logo style={{
-                        position: 'absolute',
-                        height: logoHeight,
-                        width: logoWidth,
-                        transition: "all 2.0s",
-                        transitionDelay: '2s'
-                    }}/>
+        <div className={styles.mainContainer}>
+            {/*<div className="logo-container">*/}
+            {/*    <Logo className='logo-landing' style={{*/}
+            {/*        margin: '0',*/}
+            {/*        padding: '0',*/}
+            {/*        opacity: landingLogoVis,*/}
+            {/*        transition: "all 1.0s",*/}
+            {/*        transitionDelay: '1s',*/}
+            {/*    }}/>*/}
+            {/*</div>*/}
+
+            <div className={styles.topPanelContainer}>
+                <div className={styles.imgContainer}>
+                    <img
+                        className={styles.mainImg}
+                        src={head1}
+                        onMouseOver={e => (e.currentTarget.src = head2)}
+                        onMouseOut={e => (e.currentTarget.src = head1)}
+                        alt=""/>
                 </div>
             </div>
 
-
-            <div className="navigation" style={{
-                        position: 'flex',
-                        justifyContent: 'flex-end',
-                        alignContent: 'end',
-                        width: '100%',
-                        visibility: textVisible,
-                        opacity: textVisible,
-                        transition: "all 2.0s",
-                        transitionDelay: '4s',
-                        alignSelf: 'flex-end',
-                        right: '0px',
-                        flexDirection: "row",
-                    }}>
-                <p>Hello Cunt</p>
+            <div className={styles.bottomPanelContainer}>
+                <div className={styles.bottomPanelHeading}>
+                    <hr className={styles.hr}/>
+                    <p className={styles.bottomPanelHeadingText}>SOME OF MY WORK</p>
+                    <hr className={styles.hr}/>
+                </div>
+                <div className={styles.projectsContainer}>
+                    <Cards />
+                </div>
             </div>
         </div>
     );
