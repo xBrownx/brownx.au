@@ -1,16 +1,15 @@
-import React, {useEffect, useImperativeHandle, useState} from 'react';
+import React from 'react';
 import '../App.css'
 import {ReactComponent as Logo} from '../assets/img/logo.svg';
-import {ReactComponent as Icon} from '../assets/img/iconsvg.svg';
 import {Link, useMatch, useResolvedPath} from 'react-router-dom'
-
+import { motion } from "framer-motion"
 function Navbar() {
+
     return (
-        <>
             <nav className='nav'>
+
                 <Link to='/' className='site-title'>
                     <Logo className='logo'/>
-                    {/*<Icon className='icon'/>*/}
                 </Link>
 
                 <ul>
@@ -21,11 +20,10 @@ function Navbar() {
                     <CustomLink to="/contact">Contact</CustomLink>
                 </ul>
             </nav>
-        </>
     );
 }
 
-function CustomLink({to, children, ...props}) {
+function CustomLink({to,children, ...props}) {
     const resolvedPath = useResolvedPath(to)
     const isActive = useMatch({path: resolvedPath.pathname, end: true})
     return (

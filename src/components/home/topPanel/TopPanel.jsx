@@ -2,25 +2,16 @@ import styles from '../home.module.css'
 import TopLeftPanel from "./TopLeftPanel";
 import TopRightPanel from "./TopRightPanel";
 import TopMiddlePanel from "./TopMiddlePanel";
+import {motion} from "framer-motion"
 
-const TopPanel = ({children, duration, state, transitionState}) => {
+const TopPanel = () => {
 
     return (
-        <div className={styles.topPanelContainer}>
-            <TopLeftPanel
-                duration={duration}
-                state={state}
-            />
-            <TopMiddlePanel
-                duration={duration}
-                state={state}
-                transitionState={transitionState}
-            />
-            <TopRightPanel
-                duration={duration}
-                state={state}
-            />
-        </div>
+        <motion.div className={styles.topPanelContainer}>
+            <TopLeftPanel/>
+            <TopMiddlePanel/>
+            <TopRightPanel/>
+        </motion.div>
     )
 }
 

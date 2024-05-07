@@ -2,29 +2,34 @@ import styles from "../home.module.css";
 import Cards from "./Cards";
 import Heading from "./Heading";
 import ProjectsPanel from "./ProjectsPanel";
+import {motion} from "framer-motion"
 
-const BottomPanel = ({duration, state, transitionState}) => {
-
-    const defaultStyle = {
-        transition: `transform ${duration * 0.8}ms ease-in-out`,
-        transform: "translateY(100%)"
-    };
-
-    const transitionStyles = {
-        entering: {transform: "translateY(100%)"},
-        entered: {transform: "translateY(0)"}
-    };
+const BottomPanel = () => {
 
     return (
-        <div
+        <motion.div
             className={styles.bottomPanelContainer}
-            style={{
-                ...defaultStyle,
-                ...transitionStyles[state]
+            initial={{
+                transform: "translateY(100%)",
+                transformOrigin: "0 100%",
+            }}
+            animate={{
+                transform: "translateY(0)",
+                transformOrigin: "0 100%",
+                transition: {
+                    duration: 0.5,
+                },
+            }}
+            exit={{
+                transform: "translateY(100%)",
+                transformOrigin: "0 100%",
+                transition: {
+                    duration: 0.5,
+                }
             }}>
             <Heading/>
             <ProjectsPanel/>
-        </div>
+        </motion.div>
     )
 }
 

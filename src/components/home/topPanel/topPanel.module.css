@@ -6,6 +6,8 @@
     -webkit-box-shadow: inset -3px -3px 9px 0;
     -moz-box-shadow: inset -3px -3px 9px 0 rgba(0, 0, 0, 0.3);
     box-shadow: inset -3px -3px 9px 0 rgba(0, 0, 0, 0.3);
+    transition: transform 2s ease-in-out;
+    transition-delay: 2s;
 }
 
 .topMiddleContainer {
@@ -14,6 +16,7 @@
     width: 75%;
     height: 100%;
     align-content: center;
+    justify-content: center;
 }
 
 .topRightContainer {
@@ -31,10 +34,10 @@
     margin: 0;
     height: 60%;
     bottom: 0;
-    justify-self: end;
-    align-self: end;
-    transform: translate(-50%, 0);
-    z-index: 50;
+    justify-self: center;
+    align-self: center;
+
+    z-index: 1;
 }
 
 .particlesContainer {
@@ -51,6 +54,21 @@
     height: 100%;
     width: 100%;
     z-index: -1; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
+}
+
+.heading h1 {
+    position: relative;
+    font-family: proxima-nova, sans-serif;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 120px 0 8px;
+    color: #555;
+    font-size: 4rem;
 }
 
 .content {
@@ -74,6 +92,12 @@
     margin: 1px;
     color: #555;
     font-size: 4rem;
+}
+
+.content h3 {
+    margin: 1px;
+    color: #555;
+    font-size: 3rem;
 }
 
 .content p {

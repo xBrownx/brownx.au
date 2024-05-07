@@ -1,31 +1,32 @@
 import React from "react";
 import styles from "./topPanel.module.css";
+import {motion} from "framer-motion"
 
-const TopRightPanel = ({children, duration, state}) => {
-    const defaultStyle = {
-        transition: `transform ${duration}ms ease-in-out`,
-        transform: "translateX(100%)"
-    };
+const TopRightPanel = () => {
 
-    const transitionStyles = {
-        entering: {transform: "translateX(100%)"},
-        entered: {transform: "translateX(0)"}
-    };
     return (
-
-        <div className={styles.topRightContainer}
-             style={{
-                 ...defaultStyle,
-                 ...transitionStyles[state]
-             }}>
+        <motion.div
+            className={styles.topRightContainer}
+            initial={{
+                transform: "translateX(100%)"
+            }}
+            animate={{
+                transform: "translateX(0)",
+                transition: {duration: 0.5}
+            }}
+            exit={{
+                transform: "translateX(100%)",
+                transition: {duration: 0.5}
+            }}>
 
             <div className={styles.content}>
-                <h2>developer</h2>
-                <h2>scientist</h2>
-                <h2>engineer</h2>
+                <h3>frontend</h3>
+                <h3>backend</h3>
+                <h3>data</h3>
+                <h3>embedded</h3>
             </div>
 
-        </div>
+        </motion.div>
     );
 }
 
