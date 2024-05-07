@@ -5,11 +5,11 @@ const anomeConfig = (props) => {
     return {
         autoPlay: true,
         background: {
-            color: "transparent",
+            color: "none",
             position: "center",
             size: "auto auto"
         },
-        clear: false,
+        clear: true,
         fpsLimit: 120,
         particles: {
             color: {
@@ -63,8 +63,8 @@ const anomeConfig = (props) => {
                     fill: {
                         color: "#FFF",
                     },
-                    length: 2,
-                    enable: true,
+                    length: 0,
+                    enable: false,
                 },
                 vibrate: false,
                 warp: true

@@ -7,21 +7,22 @@ const TopLeftPanel = () => {
         <motion.div
             className={styles.topLeftContainer}
             initial={{
-                    transform: "translateX(-100%)"
-                }}
-                animate={{
-                    transform: "translateX(0)",
-                    transition: {duration: 0.5}
-                }}
-                exit={{
-                    transform: "translateX(-100%)",
-                    transition: {duration: 0.5}
-                }}>
+                transform: "translateX(-100%)"
+            }}
+            animate={{
+                transform: "translateX(0)",
+                transition: {duration: 0.5}
+            }}
+            exit={{
+                transform: "translateX(-100%)",
+                transition: {duration: 0.5}
+            }}>
             <div className={styles.content}>
                 <h2>developer</h2>
                 <h2>scientist</h2>
                 <h2>engineer</h2>
             </div>
+            <div className={styles.circleLeft}></div>
         </motion.div>
     );
 }

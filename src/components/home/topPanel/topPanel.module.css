@@ -36,7 +36,6 @@
     bottom: 0;
     justify-self: center;
     align-self: center;
-
     z-index: 1;
 }
 
@@ -103,4 +102,24 @@
 .content p {
     margin: 20px 0 8px;
     color: #757575
+}
+
+.circle {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: pink;
+    border-radius: 50%;
+    translate: 0 -50%;
+    z-index: -2;
+}
+
+.circleLeft {
+    position: absolute;
+    width: 52%;
+    aspect-ratio: 1/1;
+    background-color: pink;
+    border-radius: 50%;
+    translate: 42% -100% ;
+    z-index: -2;
 }

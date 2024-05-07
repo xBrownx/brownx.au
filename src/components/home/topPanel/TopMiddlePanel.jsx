@@ -73,7 +73,9 @@ const TopMiddlePanel = ({children, duration, state, transitionState}) => {
                     toggleHead()
                 }
             />
+            <div className={styles.circle}></div>
         </motion.div>
+
     )
 }
 
