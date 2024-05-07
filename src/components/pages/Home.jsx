@@ -1,60 +1,46 @@
-import styles from './home.module.css'
-import head1 from '../../assets/img/h1.png'
-import head2 from '../../assets/img/h2.png'
-import Cards from "../Cards"
-import ParticlesComponent from '../particles'
+import styles from '../home/home.module.css'
+
 import {useEffect, useState} from "react";
+import {Transition} from "react-transition-group";
+import TopPanel from "../home/topPanel/TopPanel";
+import BottomPanel from "../home/bottomPanel/BottomPanel";
 
 function Home() {
 
-    const [particleVis, setParticleVis] = useState(false);
+    const [isOpen, toggleIsOpen] = useState(false);
+    const duration = 1000;
+    const [transitionFinished, setTransitionFinished] = useState(false);
+
     useEffect(() => {
-        setParticleVis(false)
+        toggleIsOpen(true)
     }, [])
+
     return (
+
         <div className={styles.mainContainer}>
-            <div className={styles.topPanelContainer}>
-
-
-                <div className={styles.particlesContainer}>
-
-                    <ParticlesComponent
-                        className={styles.particlesContainer}
-                        onPlay={particleVis}
-                    />
-
-                </div>
-                <div className={styles.imgContainer}>
-                    <img
-                        className={styles.mainImg}
-                        src={head1}
-                        onMouseOver={e => (
-                            e.currentTarget.src = head2,
-                                setParticleVis(true)
-                        )
-                        }
-
-                        onMouseOut={e => (
-                            e.currentTarget.src = head1,
-                                setParticleVis(false)
-                        )
-                        }
-                        alt=""/>
-                </div>
-            </div>
-
-            <div className={styles.bottomPanelContainer}>
-                <div className={styles.bottomPanelHeading}>
-                    <hr className={styles.hr}/>
-                    <p className={styles.bottomPanelHeadingText}>SOME OF MY WORK</p>
-                    <hr className={styles.hr}/>
-                </div>
-                <div className={styles.projectsContainer}>
-                    <Cards/>
-                </div>
-            </div>
+            <Transition in={isOpen} timeout={duration} addEndListener={(node, done) => {
+                setTransitionFinished(true)
+            }
+            }>
+                {state => (
+                    <>
+                        <TopPanel
+                            className={styles.topPanelContainer}
+                            duration={duration}
+                            state={state}
+                            transitionState={transitionFinished}
+                        />
+                        <BottomPanel
+                            className={styles.bottomPanelContainer}
+                            duration={duration}
+                            state={state}
+                            transitionState={transitionFinished}
+                        />
+                    </>
+                )}
+            </Transition>
         </div>
-    );
+    )
 }
 
 export default Home;
