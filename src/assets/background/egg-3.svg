@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg height="800px"
+	 width="800px"
+	 viewBox="0 0 512 512"
+	 xml:space="preserve"
+>
+<defs>
+
+    <linearGradient x1='0%' x2='100%' y1='0%' y2='100%' id='egg3BgGradient'>
+      <stop offset='0%' stop-color='#ffe5c5'/>
+        <stop offset='100%' stop-color='#eecbff'/>
+    </linearGradient>
+
+        <style>
+            .egg-3 {
+                stroke: none;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 10px;
+                fill-rule: evenodd;
+                fill: url(#egg3BgGradient);
+            }
+        </style>
+  </defs>
+	<path class="egg-3"
+		  d="M256.002,0C170.815,0,65.94,120.242,65.94,283.149C65.94,446.062,162.908,512,256.002,512
+		c93.09,0,190.058-65.938,190.058-228.851C446.06,120.242,341.186,0,256.002,0z"/>
+</svg>

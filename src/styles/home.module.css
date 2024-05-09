@@ -56,18 +56,17 @@
     margin:0;
     padding:10px;
     position: relative;
-    width: 50%;
-    height:50%;
+    width: 75%;
     border: 2px solid #666;
     border-radius: 20px;
+    justify-content: center;
+    align-content: center;
 }
 
 .leftContentWrapper h2 {
-    justify-content: center;
-    align-items: center;
     margin: 1px;
     color: #666;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     font-family: var(--main-font);
 }
@@ -82,31 +81,63 @@
 }
 
 
+/*==============================================*/
 
-.topRightOuterCircle {
-    margin-left: 30%;
-    margin-bottom: 50%;
-    /*opacity: 20%;*/
-    position: absolute;
-    height:80%;
-    aspect-ratio: 1;
-    background-color: var(--pastel-blue);
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
-    -webkit-box-shadow: 5px 5px 5px 0;
-    -moz-box-shadow: 5px 5px 5px 0 var(--border-shadow);
-    box-shadow: -5px 5px 5px 0 var(--border-shadow),
-                5px 5px 5px 0 var(--border-shadow);
-}
-
-.backgroundWrapper {
-    justify-content: center;
-    align-items: center;
+.bottomContainer {
+    width:100%;
     display: flex;
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    flex-direction: row;
+    flex-flow: column;
+    margin: 0 0;
+    justify-content: space-around;
+    align-content: center;
+    gap: 2rem;
 }
+
+.bottomContainer ul {
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+
+}
+
+.aboutBox {
+    align-content: center;
+    margin: 1px;
+    padding: 50px;
+    color: #666;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: var(--main-font);
+    min-width: 20%;
+    min-height: 5rem;
+    border-radius: 20px;
+    border: 3px solid var(--pastel-yellow-2);
+    background-color: var(--pastel-purple-0);
+}
+
+.aboutBox h2 {
+    margin: 10px;
+    color: var(--pastel-purple-5);
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: var(--main-font);
+}
+
+.aboutBox h1 {
+    font-size: 2vw;
+    margin: 0;
+    padding: 5px 0 10px 0;
+}
+
+.aboutBox p {
+    font-size: 1vw;
+    margin: 2px;
+    padding: 0;
+}
+

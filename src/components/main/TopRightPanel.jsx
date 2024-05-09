@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/main.module.css";
+import styles from "../../styles/main.module.css";
 import {motion} from "framer-motion"
 import Wave2 from "../background/Wave-2";
 import Wave3 from "../background/Wave-3";

@@ -1,8 +1,9 @@
 import React from "react";
 import {motion} from "framer-motion"
-import styles from "../styles/main.module.css";
+import styles from "../../styles/main.module.css";
 import Circle1 from "../background/Circle-1";
 import Wave1 from "../background/Wave-1";
+import Wave4 from "../background/Wave-4";
 
 const TopLeftPanel = ({ content, enterDuration, exitDuration, enterDelay, exitDelay }) => {
     return (
@@ -24,9 +25,11 @@ const TopLeftPanel = ({ content, enterDuration, exitDuration, enterDelay, exitDe
                     duration: exitDuration,
                     delay: exitDelay,
                 }
-            }}>
+            }}
+        >
             <Circle1 />
             <Wave1 />
+            <Wave4 />
             {content}
         </motion.div>
     );

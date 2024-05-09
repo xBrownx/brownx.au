@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="987" height="758" viewBox="0 0 987 758">
   <defs>
 
-    <linearGradient   x1='0%' x2='100%' y1='0%' y2='0%' id='wave1BgGradient' >
+    <linearGradient   x1='0%' x2='100%' y1='0%' y2='0%' id='blob1BgGradient' >
       <stop offset='25%'  stop-color='#ffe5c5'  />
       <stop offset='75%' stop-color='#eecbff'  />
     </linearGradient>
@@ -13,7 +13,7 @@
         stroke-linejoin: round;
         stroke-width: 10px;
         fill-rule: evenodd;
-        fill: url(#wave1BgGradient);
+        fill: url(#blob1BgGradient);
       }
     </style>
   </defs>

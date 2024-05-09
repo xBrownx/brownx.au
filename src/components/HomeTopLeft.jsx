@@ -1,6 +1,6 @@
 import React from "react";
 import {motion} from "framer-motion"
-import styles from "./styles/home.module.css";
+import styles from "../styles/home.module.css";
 import '../App.css'
 
 
@@ -20,9 +20,12 @@ const HomeTopLeft = () => {
                 transition: {duration: 0.5}
             }}>
 
-            <div className={styles.leftContentWrapper}>
-                <h2>developer</h2>
-            </div>
+            {/*<div className={styles.leftContentWrapper}>*/}
+            {/*    <h2>SOFTWARE</h2>*/}
+            {/*    <h2>DEVELOPER</h2>*/}
+            {/*    <h2>SOLUTION</h2>*/}
+            {/*    <h2>ARCHITECT</h2>*/}
+            {/*</div>*/}
 
         </motion.div>
     );

@@ -1,3 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="346" height="437" viewBox="0 0 346 437">
-  <ellipse cx="173" cy="218.5" rx="173" ry="218.5"/>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="346"
+     height="437"
+     viewBox="0 0 346 437"
+>
+  <ellipse
+          cx="173"
+          cy="218.5"
+          rx="173"
+          ry="218.5"
+  />
 </svg>

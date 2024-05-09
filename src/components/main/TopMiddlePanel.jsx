@@ -1,11 +1,23 @@
-import styles from "../styles/main.module.css";
+import styles from "../../styles/main.module.css";
 import {motion} from "framer-motion"
 import React from "react";
+import Egg1 from "../background/Egg-1";
+import Swirl1 from "../background/Swirl-1";
+import HalfCircle1 from "../background/HalfCircle-1";
 
-const TopMiddlePanel = ({heading, content, enterDuration, exitDuration, enterDelay, exitDelay}) => {
+const TopMiddlePanel = (props) => {
 
     return (
         <motion.div className={styles.topMiddleContainer}>
+
+            <Egg1 />
+            <Swirl1 />
+            <HalfCircle1
+                enterDuration={props.enterDuration}
+                exitDuration={props.exitDuration}
+                enterDelay={props.enterDelay}
+                exitDelay={props.exitDelay}
+            />
             <motion.h1
                 className={styles.h1}
                 initial={{
@@ -25,39 +37,10 @@ const TopMiddlePanel = ({heading, content, enterDuration, exitDuration, enterDel
                         delay: 0,
                     }
                 }}>
-                {heading}
+                {props.heading}
             </motion.h1>
-            {content}
-            <motion.div
-                className={styles.halfCircle}
-                initial={{
-                    opacity: 0,
-                    transform: "rotateZ(-180deg)",
-                    transformOrigin: "50% 100%",
+            {props.content}
 
-                }}
-                animate={{
-                    opacity: 1,
-                    transform: "rotateZ(0)",
-                    transition: {
-                        duration: enterDuration,
-                        delay: enterDelay + 0.4,
-                    },
-                    transformOrigin: "50% 100%",
-                }}
-                exit={{
-                    opacity: 0,
-                    transform: "rotateZ(180deg)",
-                    transition: {
-                        duration: exitDuration,
-                        delay: 0,
-                    },
-                    transformOrigin: "50% 100%",
-                    transitionEnd: {
-                        display: "none",
-                    }
-                }}
-            />
         </motion.div>
     )
 }

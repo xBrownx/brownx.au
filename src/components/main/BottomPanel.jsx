@@ -1,7 +1,8 @@
-import styles from '../styles/main.module.css'
+import styles from '../../styles/main.module.css'
 import Heading from "./Heading";
 import {motion} from "framer-motion"
 import Bean1 from "../background/Bean-1";
+import Circle2 from "../background/Circle-2";
 
 const BottomPanel = (
     {
@@ -38,6 +39,7 @@ const BottomPanel = (
             // }}>
             >
             <Bean1 />
+            <Circle2 />
             <Heading
                 heading={heading}
                 transitionEnterDuration={transitionEnterDuration}

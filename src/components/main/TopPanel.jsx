@@ -1,4 +1,4 @@
-import styles from '../styles/main.module.css'
+import styles from '../../styles/main.module.css'
 import TopLeftPanel from "./TopLeftPanel";
 import TopRightPanel from "./TopRightPanel";
 import TopMiddlePanel from "./TopMiddlePanel";

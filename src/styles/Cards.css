@@ -1,5 +1,4 @@
 .cards {
-  /*padding: 1rem;*/
   width: 100%;
   height: 100%;
 }
@@ -19,7 +18,7 @@
 }
 
 .cards__items {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding: 0;
 }
 

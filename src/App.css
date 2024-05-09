@@ -25,7 +25,7 @@ body {
     --off-white: rgba(249,248,242,1); /* #f9f8f2 */
     --pastel-pink-1: rgba(255,212,229,1); /* #ffd4e5 */
     --pastel-pink-2: rgb(255,204,203,1); /* #FFCCCB */
-    --pastel-pink-3: rgb(255,137,179,1); /* #rgb(255,137,179) */
+    --pastel-pink-3: rgba(255,137,179,1); /* #rgb(255,137,179) */
 	--pastel-green-1: rgba(212,255,234,1); /* #d4ffea */
     --pastel-green-2: rgba(180,247,237,1); /* #B4F7ED */
     --pastel-purple-0: rgba(233,212,254,1); /* #E9D4FE */

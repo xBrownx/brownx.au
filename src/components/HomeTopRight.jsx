@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles/home.module.css";
+import styles from "../styles/home.module.css";
 import {motion} from "framer-motion"
 
 const HomeTopRight = () => {
@@ -19,15 +19,14 @@ const HomeTopRight = () => {
                 transition: {duration: 0.5}
             }}>
 
-            {/*<div className={styles.topRightOuterCircle}>*/}
 
+
+            {/*<div className={styles.leftContentWrapper}>*/}
+            {/*    <h2>APPS & WEBSITES</h2>*/}
+            {/*    <h2>CROSS-PLATFORM</h2>*/}
+            {/*    <h2>FRONT-END</h2>*/}
+            {/*    <h2>BACK-END</h2>*/}
             {/*</div>*/}
-            <div className={styles.content}>
-                <h3>frontend</h3>
-                <h3>backend</h3>
-                <h3>assend</h3>
-                <h3>bellend</h3>
-            </div>
 
         </motion.div>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import '../styles/Cards.css'
+import '../../styles/Cards.css'
 import {motion} from "framer-motion"
 
 function CardItem(props) {
