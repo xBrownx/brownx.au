@@ -1,14 +1,19 @@
 import React, {useEffect, useState} from "react";
-import styles from "./topPanel.module.css";
-import ParticlesComponent from "../../particles";
-import head1 from "../../../assets/img/h1.png";
-import head2 from "../../../assets/img/h2.png";
+import styles from "./styles/home.module.css";
+import ParticlesComponent from "./ui/particles";
+import head1 from "../assets/img/h1.png";
+import head2 from "../assets/img/h2.png";
 import {motion} from "framer-motion"
 
-const TopMiddlePanel = ({children, duration, state, transitionState}) => {
+const HomeTopMiddle = () => {
 
     const [imgSrc, setImgSrc] = useState(head1);
     const [particleVis, setParticleVis] = useState(false);
+
+    function showBrainExplosion(isShow) {
+        setParticleVis(isShow);
+        setImgSrc(isShow ? head2 : head1);
+    }
 
     function delay(ms) {
         return new Promise((resolve) => {
@@ -23,9 +28,7 @@ const TopMiddlePanel = ({children, duration, state, transitionState}) => {
             setImgSrc(head1);
             await delay(100);
         }
-
     }
-
 
     useEffect(() => {
         setParticleVis(false)
@@ -33,9 +36,6 @@ const TopMiddlePanel = ({children, duration, state, transitionState}) => {
 
     return (
         <motion.div className={styles.topMiddleContainer}>
-            {/*<div className={styles.heading}>*/}
-            {/*    <h1>andrew</h1>*/}
-            {/*</div>*/}
             <div className={styles.particlesContainer}>
                 <ParticlesComponent
                     onPlay={particleVis}
@@ -47,36 +47,44 @@ const TopMiddlePanel = ({children, duration, state, transitionState}) => {
                 className={styles.mainImg}
                 src={imgSrc}
                 alt=""
-                onMouseOver={e => (setParticleVis(true), setImgSrc(head2))}
-                onMouseOut={e => (setParticleVis(false), setImgSrc(head1))}
+                onMouseOver={e => (showBrainExplosion(true))}
+                onMouseOut={e => (showBrainExplosion(false))}
+
                 initial={{
+                    opacity: 0,
                     transform: "translateY(100%) translate(-50%, 0)",
                     transformOrigin: "0 100%",
                 }}
+
                 animate={{
+                    opacity: 1,
                     transform: "translateY(0) translate(-50%, 0)",
                     transformOrigin: "0 100%",
                     transition: {
-                        duration: 0.6,
-                        delay: 0.3
+                        duration: 0.4,
+                        delay: 0.8
                     },
                 }}
+
                 exit={{
+                    opacity: 0,
                     transform: "translateY(100%) translate(-50%, 0)",
                     transformOrigin: "0 100%",
                     transition: {
-                        duration: 0.6,
+                        duration: 0.4,
                         delay: 0
+                    },
+                    transitionEnd: {
+                        display: "none",
                     }
                 }}
+
                 onAnimationComplete={() =>
                     toggleHead()
                 }
             />
-            <div className={styles.circle}></div>
         </motion.div>
-
     )
 }
 
-export default TopMiddlePanel;
+export default HomeTopMiddle;

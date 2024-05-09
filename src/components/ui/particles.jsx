@@ -1,7 +1,7 @@
 import Particles, {initParticlesEngine} from "@tsparticles/react";
 import React, {useEffect, useState} from "react";
 import {loadFull} from "tsparticles";
-import anomeConfig from "./config/anomeConfig";
+import anomeConfig from "../config/anomeConfig";
 
 const ParticlesComponent = (props) => {
     const [init, setInit] = useState(false);

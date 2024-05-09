@@ -1,14 +1,21 @@
-import styles from '../home/home.module.css'
-import {motion} from "framer-motion"
-import TopPanel from "../home/topPanel/TopPanel";
-import BottomPanel from "../home/bottomPanel/BottomPanel";
+import React from 'react';
+import MainFrame from "../main/MainFrame";
+import HomeBottom from "../HomeBottom";
+import HomeTopMiddle from "../HomeTopMiddle";
+import HomeTopLeft from "../HomeTopLeft";
+import HomeTopRight from "../HomeTopRight";
+
 
 function Home() {
+
     return (
-        <motion.div className={styles.mainContainer}>
-            <TopPanel className={styles.topPanelContainer}/>
-            <BottomPanel className={styles.bottomPanelContainer}/>
-        </motion.div>
+        <MainFrame
+            topLeftContent={ <HomeTopLeft /> }
+            topMiddleContent={ <HomeTopMiddle /> }
+            topRightContent={ <HomeTopRight /> }
+            bottomHeading={ "CHECK ME OUT" }
+            bottomContent={ <HomeBottom/> }
+        />
     )
 }
 

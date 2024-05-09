@@ -1,0 +1,90 @@
+.wave1 {
+    z-index: 1;
+    padding:0;
+    opacity: 50%;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    margin: 6%;
+    right: 0;
+    rotate: 220deg;
+    filter: drop-shadow(-8px -6px 0px var(--pastel-purple-0));
+}
+
+.wave2 {
+    z-index: 1;
+    padding:0;
+    opacity: 50%;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    margin: 6%;
+    left: 0;
+    top: -20%;
+    rotate: 220deg;
+    filter: drop-shadow(-8px -6px 0px var(--pastel-purple-0));
+}
+
+.wave3 {
+    z-index: 1;
+    padding:0;
+    opacity: 50%;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    margin: 0%;
+    right: 0;
+    top: 40%;
+
+    rotate: -43deg;
+    filter: drop-shadow(-8px -6px 0px var(--pastel-purple-0));
+}
+
+.bean1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 17%;
+    margin-left: 15%;
+    rotate: 45deg;
+    filter: drop-shadow(-10px 10px 0px var(--pastel-purple-0));
+}
+
+.blob1 {
+    z-index: 1;
+    padding:0;
+    opacity: 50%;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    margin-left: 1%;
+    left: 0;
+    bottom: 0;
+    rotate: -43deg;
+    filter: drop-shadow(-8px -6px 0px var(--pastel-purple-0));
+}
+
+.circle1Outer {
+    margin-left: 0%;
+    margin-top: 25%;
+    opacity: 20%;
+    position: absolute;
+    display: flex;
+    height:75%;
+    aspect-ratio: 1;
+    background-color: var(--pastel-yellow-2);
+    border-radius: 50%;
+    border: 10px solid var(--pastel-purple-5);
+    align-items: center;
+    justify-content: center;
+    z-index: -10;
+}
+
+.circle1Inner {
+    position: absolute;
+    height:40%;
+    aspect-ratio: 1;
+    background-color: var(--pastel-purple-1);
+    border-radius: 50%;
+    border: 10px solid var(--pastel-purple-5);
+}

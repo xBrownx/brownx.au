@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from "./bottomPanel.module.css";
-import Cards from "./Cards";
+import styles from "./styles/home.module.css";
+import Cards from "./ui/Cards";
 
-const ProjectsPanel = () => {
+const HomeBottom = () => {
     return (
         <div className={styles.projectsContainer}>
             <Cards/>
@@ -10,4 +10,4 @@ const ProjectsPanel = () => {
     );
 };
 
-export default ProjectsPanel;
+export default HomeBottom;

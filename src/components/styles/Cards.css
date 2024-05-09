@@ -8,7 +8,6 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  /*max-width: 1120px;*/
   width: 100%;
   height: 100%;
   margin: 0 0;
@@ -32,7 +31,8 @@
   padding: 0;
   top: 0;
   border-radius: 20px;
-  background-color: white;
+  background-color: var(--pastel-yellow-3);
+  border: 4px solid var(--pastel-purple-5);
 }
 
 .cards__item__link {
@@ -111,8 +111,10 @@
 
 .cards__item__text {
   width: 100%;
-  color: #252e48;
+  color: #24242F;
   font-size: 18px;
+  font-family: var(--main-font);
+  font-weight: 500;
   line-height: 24px;
   justify-content: center;
 }

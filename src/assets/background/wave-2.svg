@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1079" height="155" viewBox="0 0 1079 155">
+  <defs>
+    <style>
+      .wave-2 {
+        fill: none;
+        stroke: #d4ffea;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 20px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="wave-2" d="M10,135L102,10l94,125L287,11l68,121L448,17l93,128L617,17l97,127L815,25l79,114L997,29l72,113"/>
+</svg>

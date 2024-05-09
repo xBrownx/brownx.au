@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="987" height="758" viewBox="0 0 987 758">
+  <defs>
+
+    <linearGradient   x1='0%' x2='100%' y1='0%' y2='0%' id='wave1BgGradient' >
+      <stop offset='25%'  stop-color='#ffe5c5'  />
+      <stop offset='75%' stop-color='#eecbff'  />
+    </linearGradient>
+
+    <style>
+      .blob-1 {
+        stroke: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 10px;
+        fill-rule: evenodd;
+        fill: url(#wave1BgGradient);
+      }
+    </style>
+  </defs>
+  <path class="blob-1" d="M957,195c-19.707,81.475-147.118,159.694-124,208,47.124,98.467,153.559,184.9,142.725,242.483C960.972,723.9,897.5,761.784,799,752,752.645,747.4,590.325,633.481,537,629c-133.929-11.255-199.977,77.933-322,34C-91.135,552.779-20.583,334.788,164,266c70.106-26.126,279.641-67.986,322-107C590.5,62.749,602.531,57.177,696,37,1023.78-33.757,1001.66,10.367,957,195Z"/>
+</svg>

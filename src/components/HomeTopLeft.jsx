@@ -1,11 +1,13 @@
 import React from "react";
 import {motion} from "framer-motion"
-import styles from "./topPanel.module.css";
+import styles from "./styles/home.module.css";
+import '../App.css'
 
-const TopLeftPanel = () => {
+
+const HomeTopLeft = () => {
     return (
         <motion.div
-            className={styles.topLeftContainer}
+            className={styles.topContainer}
             initial={{
                 transform: "translateX(-100%)"
             }}
@@ -17,14 +19,13 @@ const TopLeftPanel = () => {
                 transform: "translateX(-100%)",
                 transition: {duration: 0.5}
             }}>
-            <div className={styles.content}>
+
+            <div className={styles.leftContentWrapper}>
                 <h2>developer</h2>
-                <h2>scientist</h2>
-                <h2>engineer</h2>
             </div>
-            <div className={styles.circleLeft}></div>
+
         </motion.div>
     );
 }
 
-export default TopLeftPanel;
+export default HomeTopLeft;

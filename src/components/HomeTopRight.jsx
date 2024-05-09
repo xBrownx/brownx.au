@@ -1,12 +1,12 @@
 import React from "react";
-import styles from "./topPanel.module.css";
+import styles from "./styles/home.module.css";
 import {motion} from "framer-motion"
 
-const TopRightPanel = () => {
+const HomeTopRight = () => {
 
     return (
         <motion.div
-            className={styles.topRightContainer}
+            className={styles.topContainer}
             initial={{
                 transform: "translateX(100%)"
             }}
@@ -19,15 +19,18 @@ const TopRightPanel = () => {
                 transition: {duration: 0.5}
             }}>
 
+            {/*<div className={styles.topRightOuterCircle}>*/}
+
+            {/*</div>*/}
             <div className={styles.content}>
                 <h3>frontend</h3>
                 <h3>backend</h3>
-                <h3>data</h3>
-                <h3>embedded</h3>
+                <h3>assend</h3>
+                <h3>bellend</h3>
             </div>
 
         </motion.div>
     );
 }
 
-export default TopRightPanel;
+export default HomeTopRight;

@@ -1,0 +1,112 @@
+.topContainer {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 2;
+    position: relative;
+}
+
+.topMiddleContainer {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 3;
+    position: relative;
+}
+
+.mainImg {
+    position: absolute;
+    height: 60%;
+    bottom: 0;
+    left: 50%;
+    justify-self: center;
+    align-self: center;
+    z-index: 100;
+}
+
+.particlesContainer {
+    z-index: 10;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.particles {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
+}
+
+.rightContentWrapper {
+    position: absolute;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leftContentWrapper {
+    margin:0;
+    padding:10px;
+    position: relative;
+    width: 50%;
+    height:50%;
+    border: 2px solid #666;
+    border-radius: 20px;
+}
+
+.leftContentWrapper h2 {
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    color: #666;
+    font-size: 3rem;
+    text-align: center;
+    font-family: var(--main-font);
+}
+
+.projectsContainer {
+    display: flex;
+    padding-top: 0;
+    margin-top: 0;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.topRightOuterCircle {
+    margin-left: 30%;
+    margin-bottom: 50%;
+    /*opacity: 20%;*/
+    position: absolute;
+    height:80%;
+    aspect-ratio: 1;
+    background-color: var(--pastel-blue);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    -webkit-box-shadow: 5px 5px 5px 0;
+    -moz-box-shadow: 5px 5px 5px 0 var(--border-shadow);
+    box-shadow: -5px 5px 5px 0 var(--border-shadow),
+                5px 5px 5px 0 var(--border-shadow);
+}
+
+.backgroundWrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

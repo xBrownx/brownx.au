@@ -3,7 +3,7 @@
   <defs>
     <style>
       .cls-1 {
-        fill: white;
+        fill: 'current';
       }
 
       .cls-1, .cls-2 {
@@ -11,7 +11,7 @@
       }
 
       .cls-2 {
-        fill: white;
+        fill: 'current';
       }
     </style>
   </defs>

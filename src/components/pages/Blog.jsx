@@ -1,8 +1,16 @@
 import React from 'react';
+import MainFrame from "../main/MainFrame";
 
 function Blog(props) {
     return (
-        <h1>Blog</h1>
+        <MainFrame
+            heading={<>light<br/>reading</>}
+            topLeftContent={ <></> }
+            topMiddleContent={ <></> }
+            topRightContent={ <></> }
+            bottomHeading={ "READ ABOUT" }
+            bottomContent={ <></> }
+        />
     );
 }
 
