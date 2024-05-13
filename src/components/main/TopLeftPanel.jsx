@@ -27,9 +27,9 @@ const TopLeftPanel = ({ content, enterDuration, exitDuration, enterDelay, exitDe
                 }
             }}
         >
-            <Circle1 />
-            <Wave1 />
-            <Wave4 />
+            {/*<Circle1 />*/}
+            {/*<Wave1 />*/}
+            {/*<Wave4 />*/}
             {content}
         </motion.div>
     );

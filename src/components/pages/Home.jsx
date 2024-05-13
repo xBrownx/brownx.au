@@ -10,11 +10,11 @@ function Home() {
 
     return (
         <MainFrame
-            topLeftContent={ <HomeTopLeft /> }
-            topMiddleContent={ <HomeTopMiddle /> }
-            topRightContent={ <HomeTopRight /> }
+            topLeftContent={ <></> }
+            topMiddleContent={ <></> }
+            topRightContent={ <></> }
             bottomHeading={ "CHECK ME OUT" }
-            bottomContent={ <HomeBottom/> }
+            bottomContent={ <></> }
         />
     )
 }

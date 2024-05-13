@@ -5,6 +5,7 @@ import Projects from "./components/pages/Projects";
 import Blog from "./components/pages/Blog";
 import Contact from "./components/pages/Contact";
 import {Route, Routes, useLocation} from "react-router-dom";
+import './App.css'
 
 import {AnimatePresence} from "framer-motion";
 
@@ -19,10 +20,10 @@ function App() {
                 <AnimatePresence mode="wait">
                     <Routes location={location} key={location.pathname}>
                         <Route path="/" element={<Home/>}/>
-                        <Route path="/about" element={<About/>}/>
-                        <Route path="/projects" element={<Projects/>}/>
-                        <Route path="/blog" element={<Blog/>}/>
-                        <Route path="/contact" element={<Contact/>}/>
+                {/*        <Route path="/about" element={<About/>}/>*/}
+                {/*        <Route path="/projects" element={<Projects/>}/>*/}
+                {/*        <Route path="/blog" element={<Blog/>}/>*/}
+                {/*        <Route path="/contact" element={<Contact/>}/>*/}
                     </Routes>
 
                 </AnimatePresence>

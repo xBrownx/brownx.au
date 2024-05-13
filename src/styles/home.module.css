@@ -1,11 +1,11 @@
 .topContainer {
+    display: flex;
+    flex: 1;
+    z-index: 2;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    display: flex;
-    z-index: 2;
-    position: relative;
 }
 
 .topMiddleContainer {
@@ -15,11 +15,9 @@
     height: 100%;
     display: flex;
     z-index: 3;
-    position: relative;
 }
 
 .mainImg {
-    position: absolute;
     height: 60%;
     bottom: 0;
     left: 50%;
@@ -29,8 +27,7 @@
 }
 
 .particlesContainer {
-    z-index: 10;
-    position: relative;
+    z-index: 1;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -38,14 +35,13 @@
 }
 
 .particles {
-    position: absolute;
+
     height: 100%;
     width: 100%;
-    z-index: 10; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
+    z-index: 1; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
 }
 
 .rightContentWrapper {
-    position: absolute;
     padding: 0 0 0 0;
     display: flex;
     flex-direction: column;
@@ -55,7 +51,6 @@
 .leftContentWrapper {
     margin:0;
     padding:10px;
-    position: relative;
     width: 75%;
     border: 2px solid #666;
     border-radius: 20px;
@@ -84,12 +79,9 @@
 /*==============================================*/
 
 .bottomContainer {
-    width:100%;
     display: flex;
     flex-direction: row;
-    flex-flow: column;
-    margin: 0 0;
-    justify-content: space-around;
+    flex: 1;
     align-content: center;
     gap: 2rem;
 }

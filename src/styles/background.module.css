@@ -105,8 +105,13 @@
     filter: drop-shadow(-8px -6px 0px var(--pastel-purple-0));
 }
 
-.halfCircle {
+.halfCircle1 {
     position: absolute;
+    display: block;
+    height: 70%;
+    aspect-ratio: 1/2;
+    bottom: 0;
+    left: 0;
     background: var(--circle-colour);
     border-top: 16px solid var(--circle-border-fill-colour);
     border-left: 16px solid var(--circle-border-fill-colour);
@@ -116,14 +121,7 @@
             inset 4px 0px 0 0px var(--circle-border-colour),
             inset -4px 0px 0 0px var(--circle-border-colour),
             inset 0px 4px 0 0px var(--circle-border-colour);
-
-    height: 15vw;
-    width: 30vw;
-    left: 50%;
-    bottom: 0;
-    z-index: 1;
     border-radius: 50% 50% 0 0/100% 100% 0 0;
-    translate: -50% 0;
 }
 
 .circle1Outer {

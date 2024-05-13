@@ -5,7 +5,7 @@ import Wave2 from "../background/Wave-2";
 import Wave3 from "../background/Wave-3";
 import Blob1 from "../background/Blob-1";
 
-const TopRightPanel = ({ content, enterDuration, exitDuration, enterDelay, exitDelay }) => {
+const TopRightPanel = (props) => {
 
     return (
         <motion.div
@@ -16,21 +16,21 @@ const TopRightPanel = ({ content, enterDuration, exitDuration, enterDelay, exitD
             animate={{
                 transform: "translateX(0)",
                 transition: {
-                    duration: enterDuration,
-                    delay: enterDelay,
+                    duration: props.enterDuration,
+                    delay: props.enterDelay,
                 }
             }}
             exit={{
                 transform: "translateX(100%)",
                 transition: {
-                    duration: exitDuration,
-                    delay: exitDelay,
+                    duration: props.exitDuration,
+                    delay: props.exitDelay,
                 }
             }}>
-            <Wave2 />
-            <Wave3 />
-            <Blob1 />
-            {content}
+            {/*<Wave2 />*/}
+            {/*<Wave3 />*/}
+            {/*<Blob1 />*/}
+            {/*{props.content}*/}
         </motion.div>
     );
 }

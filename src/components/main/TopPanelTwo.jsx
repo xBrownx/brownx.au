@@ -4,7 +4,7 @@ import TopRightPanel from "./TopRightPanel";
 import TopMiddlePanel from "./TopMiddlePanel";
 import {motion} from "framer-motion"
 
-const TopPanel = (
+const TopPanelThree = (
     {
         heading,
         topLeftContent,
@@ -19,13 +19,6 @@ const TopPanel = (
     return (
         <motion.div className={styles.topPanelContainer}>
 
-            <TopLeftPanel
-                content = {topLeftContent}
-                enterDuration={transitionEnterDuration}
-                exitDuration={transitionExitDuration}
-                enterDelay={transitionEnterDelay}
-                exitDelay={transitionExitDelay}
-            />
             <TopMiddlePanel
                 heading = {heading}
                 content = {topMiddleContent}
@@ -45,4 +38,4 @@ const TopPanel = (
     )
 }
 
-export default TopPanel
+export default TopPanelThree

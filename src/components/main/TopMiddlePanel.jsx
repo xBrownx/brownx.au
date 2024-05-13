@@ -10,14 +10,14 @@ const TopMiddlePanel = (props) => {
     return (
         <motion.div className={styles.topMiddleContainer}>
 
-            <Egg1 />
-            <Swirl1 />
-            <HalfCircle1
-                enterDuration={props.enterDuration}
-                exitDuration={props.exitDuration}
-                enterDelay={props.enterDelay}
-                exitDelay={props.exitDelay}
-            />
+            {/*<Egg1 />*/}
+            {/*<Swirl1 />*/}
+            {/*<HalfCircle1*/}
+            {/*    enterDuration={props.enterDuration}*/}
+            {/*    exitDuration={props.exitDuration}*/}
+            {/*    enterDelay={props.enterDelay}*/}
+            {/*    exitDelay={props.exitDelay}*/}
+            {/*/>*/}
             <motion.h1
                 className={styles.h1}
                 initial={{
@@ -39,7 +39,7 @@ const TopMiddlePanel = (props) => {
                 }}>
                 {props.heading}
             </motion.h1>
-            {props.content}
+            {/*{props.content}*/}
 
         </motion.div>
     )

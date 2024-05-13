@@ -4,8 +4,7 @@ import {motion} from "framer-motion";
 
 const HalfCircle1 = (props) => {
     return (
-        <motion.div
-            className={styles.halfCircle}
+        <motion.div className={styles.halfCircle1}
             initial={{
                 opacity: 0,
                 transform: "rotateZ(-180deg)",

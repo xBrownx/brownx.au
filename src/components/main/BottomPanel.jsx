@@ -38,8 +38,8 @@ const BottomPanel = (
             //     }
             // }}>
             >
-            <Bean1 />
-            <Circle2 />
+            {/*<Bean1 />*/}
+            {/*<Circle2 />*/}
             <Heading
                 heading={heading}
                 transitionEnterDuration={transitionEnterDuration}

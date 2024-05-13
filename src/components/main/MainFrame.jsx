@@ -1,10 +1,10 @@
 import styles from '../../styles/main.module.css'
-import '../../App.css'
 import {motion} from "framer-motion"
-import TopPanel from './TopPanel';
+import TopPanelThree from './TopPanelThree';
 import BottomPanel from "./BottomPanel";
+import TopPanelTwo from "./TopPanelTwo";
 
-function MainFrame({ heading, topLeftContent, topMiddleContent, topRightContent, bottomHeading, bottomContent }) {
+function MainFrame(props) {
 
     const topPanelEnterDuration = 0.5
     const topPanelEnterDelay = 0
@@ -19,13 +19,14 @@ function MainFrame({ heading, topLeftContent, topMiddleContent, topRightContent,
     const bottomPanelExitDelay = 0.4
 
     return (
-        <motion.div className={styles.mainContainer}>
-            <TopPanel
-                heading={heading}
+        <div className={styles.mainContainer}>
+
+            <TopPanelThree
                 className={styles.topPanelContainer}
-                topLeftContent={topLeftContent}
-                topMiddleContent={topMiddleContent}
-                topRightContent={topRightContent}
+                heading={props.heading}
+                topLeftContent={props.topLeftContent}
+                topMiddleContent={props.topMiddleContent}
+                topRightContent={props.topRightContent}
                 transitionEnterDuration={topPanelEnterDuration}
                 transitionEnterDelay={topPanelEnterDelay}
                 transitionExitDuration={topPanelExitDuration}
@@ -33,14 +34,14 @@ function MainFrame({ heading, topLeftContent, topMiddleContent, topRightContent,
             />
             <BottomPanel
                 className={styles.bottomPanelContainer}
-                heading={bottomHeading}
-                content={bottomContent}
+                heading={props.bottomHeading}
+                content={props.bottomContent}
                 transitionEnterDuration={bottomPanelEnterDuration}
                 transitionEnterDelay={bottomPanelEnterDelay}
                 transitionExitDuration={bottomPanelExitDuration}
                 transitionExitDelay={bottomPanelExitDelay}
             />
-        </motion.div>
+        </div>
     )
 }
 
