@@ -1,14 +1,13 @@
 .wave1 {
-    z-index: 1;
-    padding:0;
+    translate: 66% 0;
+    width:50%;
+    height: 50%;
     opacity: 50%;
-    position: absolute;
-    width: 30%;
-    height: 30%;
-    margin: 6%;
-    right: 0;
+    left: 0;
+    top: 0;
     rotate: 220deg;
     filter: drop-shadow(-8px -6px 0px var(--pastel-purple-0));
+    overflow: hidden;
 }
 
 .wave2 {

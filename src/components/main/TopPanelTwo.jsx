@@ -17,7 +17,7 @@ const TopPanelThree = (
     }) => {
 
     return (
-        <motion.div className={styles.topPanelContainer}>
+        <motion.div className={styles.topPanelThreeContainer}>
 
             <TopMiddlePanel
                 heading = {heading}

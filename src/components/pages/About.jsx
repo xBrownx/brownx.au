@@ -6,21 +6,13 @@ import {motion} from "framer-motion"
 import AboutTopMiddle from "../AboutTopMiddle";
 import AboutBottom from "../AboutBottom";
 import TopPanelTwo from "../main/TopPanelTwo";
+import AboutTop from "../AboutTop";
 
 function About() {
 
     return (
         <motion.div className={styles.mainContainer}>
-        <TopPanelTwo
-                heading={<>andrew<br/>brown</>}
-                className={styles.topPanelContainer}
-                topMiddleContent={<AboutTopMiddle />}
-                topRightContent={<></>}
-                transitionEnterDuration={0.5}
-                transitionEnterDelay={0}
-                transitionExitDuration={0.5}
-                transitionExitDelay={0.4}
-            />
+        <AboutTop />
             <BottomPanel
                 className={styles.bottomPanelContainer}
                 heading={"MORE ABOUT ME" }
