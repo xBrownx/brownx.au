@@ -4,8 +4,14 @@ import ParticlesComponent from "./ui/particles";
 import head1 from "../assets/img/h1.png";
 import head2 from "../assets/img/h2.png";
 import {motion} from "framer-motion"
+import HalfCircle1 from "./background/HalfCircle-1";
+import Blob1 from "./background/Blob-1";
+import Wave1 from "./background/Wave-1";
+import Wave3 from "./background/Wave-3";
+import Swirl1 from "./background/Swirl-1";
+import Wave4 from "./background/Wave-4";
 
-const HomeTopMiddle = () => {
+const HomeTopMiddle = (props) => {
 
     const [imgSrc, setImgSrc] = useState(head1);
     const [particleVis, setParticleVis] = useState(false);
@@ -42,6 +48,13 @@ const HomeTopMiddle = () => {
                     className={styles.particles}
                 />
             </div>
+
+            <HalfCircle1
+                enterDuration={props.enterDuration}
+                exitDuration={props.exitDuration}
+                enterDelay={props.enterDelay}
+                exitDelay={props.exitDelay}
+            />
 
             <motion.img
                 className={styles.mainImg}
@@ -83,6 +96,10 @@ const HomeTopMiddle = () => {
                     toggleHead()
                 }
             />
+            <div className={styles.backgroundContainer}>
+                <Swirl1/>
+                <Wave4 />
+            </div>
         </motion.div>
     )
 }

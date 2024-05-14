@@ -1,20 +1,17 @@
 import React from 'react';
 import MainFrame from "../main/MainFrame";
-import TopPanelThree from "../main/TopPanelThree";
 import HomeBottom from "../HomeBottom";
-import BottomPanel from "../main/BottomPanel";
+import HomeTop from "../HomeTop";
+
 
 
 function Home() {
 
     return (
         <MainFrame
-            TopContent={<>
-                <TopPanelThree />
-                </>
-            }
-            bottomHeading={ "CHECK ME OUT" }
-            bottomContent={ <BottomPanel /> }
+            topContent={<HomeTop/>}
+            bottomHeading={ "CHECK MY WORK" }
+            bottomContent={ <HomeBottom/> }
         />
     )
 }

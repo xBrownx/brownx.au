@@ -6,7 +6,7 @@ const HomeTopRight = () => {
 
     return (
         <motion.div
-            className={styles.topContainer}
+            className={styles.homeTopContainer}
             initial={{
                 transform: "translateX(100%)"
             }}
@@ -19,7 +19,10 @@ const HomeTopRight = () => {
                 transition: {duration: 0.5}
             }}>
 
-
+            <div className={styles.textContainer}>
+                <h1>analyst</h1>
+                <h4>Data Scientist with expertise in business analysis, data cleansing, dashboard design and development.</h4>
+            </div>
 
             {/*<div className={styles.leftContentWrapper}>*/}
             {/*    <h2>APPS & WEBSITES</h2>*/}

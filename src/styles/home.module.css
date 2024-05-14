@@ -1,29 +1,59 @@
-.topContainer {
+.homeTopWrapper {
     display: flex;
-    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.homeTopContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     z-index: 2;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
 }
 
-.topMiddleContainer {
+.topLeftContainer, .topMiddleContainer, .topRightContainer {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    display: flex;
-    z-index: 3;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.topLeftContainer {
+    border-right: 4px solid var(--border-colour);
+    -webkit-box-shadow: inset -3px -3px 9px 0;
+    -moz-box-shadow: inset -3px -3px 9px 0 var(--border-shadow);
+    box-shadow: inset -3px -3px 9px 0 var(--border-shadow);
+}
+
+.topRightContainer {
+    border-left: 4px solid var(--border-colour);
+    -webkit-box-shadow: inset 3px -3px 9px 0;
+    -moz-box-shadow: inset 3px -3px 9px 0 var(--border-shadow);
+    box-shadow: inset 3px -3px 9px 0 var(--border-shadow);
+}
+
+.topMiddleContainer {
+    position: relative;
+    z-index: 2;
 }
 
 .mainImg {
-    height: 60%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 49%;
     bottom: 0;
-    left: 50%;
-    justify-self: center;
-    align-self: center;
-    z-index: 100;
+    transform: translateX(-50%);
+    z-index: 1;
+    height: 60%;
+    width: auto;
 }
 
 .particlesContainer {
@@ -35,44 +65,9 @@
 }
 
 .particles {
-
     height: 100%;
     width: 100%;
     z-index: 1; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
-}
-
-.rightContentWrapper {
-    padding: 0 0 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.leftContentWrapper {
-    margin:0;
-    padding:10px;
-    width: 75%;
-    border: 2px solid #666;
-    border-radius: 20px;
-    justify-content: center;
-    align-content: center;
-}
-
-.leftContentWrapper h2 {
-    margin: 1px;
-    color: #666;
-    font-size: 2.5rem;
-    text-align: center;
-    font-family: var(--main-font);
-}
-
-.projectsContainer {
-    display: flex;
-    padding-top: 0;
-    margin-top: 0;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
 }
 
 
@@ -81,55 +76,156 @@
 .bottomContainer {
     display: flex;
     flex-direction: row;
-    flex: 1;
-    align-content: center;
-    gap: 2rem;
-}
-
-.bottomContainer ul {
     align-content: center;
     justify-content: center;
-    width: 100%;
-    margin: 50px 0px 0px 0px;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    gap: 4rem;
+    padding: 0 20px 0 20px;
+}
 
+.bottomWrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.bottomWrapper ul {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 200px 0 200px;
+    list-style: none;
+    gap: 2rem;
+    overflow: hidden;
 }
 
 .aboutBox {
+    display: flex;
     align-content: center;
-    margin: 1px;
-    padding: 50px;
+    text-align: center;
+    height: 75%;
+    aspect-ratio: 1/1;
     color: #666;
-    font-size: 2.5rem;
-    text-align: center;
     font-family: var(--main-font);
-    min-width: 20%;
-    min-height: 5rem;
     border-radius: 20px;
-    border: 3px solid var(--pastel-yellow-2);
-    background-color: var(--pastel-purple-0);
+    border: 4px solid var(--pastel-purple-5);
+    background-color: var(--off-white);
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
 }
 
-.aboutBox h2 {
-    margin: 10px;
-    color: var(--pastel-purple-5);
-    font-size: 2.5rem;
-    text-align: center;
-    font-family: var(--main-font);
+.aboutLink {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-decoration: none;
 }
 
-.aboutBox h1 {
-    font-size: 2vw;
+.aboutPicWrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.aboutPicWrapper::after {
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--pastel-pink-3);
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.aboutImg {
+    position: absolute;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+}
+
+.aboutImg:hover {
+    transform: scale(1.1);
+    justify-content: center;
+}
+
+.aboutInfo {
+    display: flex;
+    flex-direction: column;
+    align-content: start;
     margin: 0;
-    padding: 5px 0 10px 0;
-}
-
-.aboutBox p {
-    font-size: 1vw;
-    margin: 2px;
     padding: 0;
+    width: 100%;
+    height: 50%;
 }
 
+.aboutText {
+    padding: 0 0 0 20px;
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+    font-weight: normal;
+    text-align: start;
+    font-family: var(--main-font);
+    color: #666;
+    font-size: 16px;
+}
+
+.aboutSubText {
+    padding: 0 0 20px 20px;
+    margin: 5px 0 0 0;
+    width: 100%;
+    height: fit-content;
+    font-weight: normal;
+    text-align: start;
+    font-family: var(--main-font);
+    color: #999;
+    font-size: 14px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 60%;
+    font-family: var(--main-font);
+    color: #777;height: fit-content;
+}
+
+.textContainer h1 {
+    text-align: start;
+    align-content: end;
+    padding: 5px;
+    margin: 0 0 0 20px;
+    font-size: 4vmin;
+    height: fit-content;
+}
+
+.textContainer h4 {
+    margin: 0 0 0 20px;
+    padding: 5px;
+    color: #888;
+    font-weight: normal;
+    font-size: 1.2vmin;
+    height: fit-content;
+}
+
+.backgroundContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

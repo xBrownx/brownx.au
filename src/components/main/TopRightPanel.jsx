@@ -30,7 +30,7 @@ const TopRightPanel = (props) => {
             {/*<Wave2 />*/}
             {/*<Wave3 />*/}
             {/*<Blob1 />*/}
-            {/*{props.content}*/}
+            {props.content}
         </motion.div>
     );
 }
