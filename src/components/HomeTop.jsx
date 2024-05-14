@@ -36,19 +36,19 @@ const HomeTop = (props) => {
                     </div>
                     <motion.div
                         className={styles.backgroundContainer}
-                    initial={{
-                        transform: "translateX(100%)"
-                    }}
-                    animate={{
-                        transform: "translateX(0)",
-                        transition: {duration: 0.5}
-                    }}
-                    exit={{
-                        transform: "translateX(100%)",
-                        transition: {duration: 0.5}
-                    }}>
-                        <Circle1 />
-                        <Wave2 />
+                        initial={{
+                            transform: "translateX(100%)"
+                        }}
+                        animate={{
+                            transform: "translateX(0)",
+                            transition: {duration: 0.5}
+                        }}
+                        exit={{
+                            transform: "translateX(100%)",
+                            transition: {duration: 0.5}
+                        }}>
+                        <Circle1/>
+                        <Wave2/>
                     </motion.div>
                 </motion.div>
                 <HomeTopMiddle/>
@@ -75,29 +75,21 @@ const HomeTop = (props) => {
                     <motion.div
                         className={styles.backgroundContainer}
                         initial={{
-                        transform: "translateX(-100%)"
-                    }}
-                    animate={{
-                        transform: "translateX(0)",
-                        transition: {duration: 0.5}
-                    }}
-                    exit={{
-                        transform: "translateX(-100%)",
-                        transition: {duration: 0.5}
-                    }}
+                            transform: "translateX(-100%)"
+                        }}
+                        animate={{
+                            transform: "translateX(0)",
+                            transition: {duration: 0.5}
+                        }}
+                        exit={{
+                            transform: "translateX(-100%)",
+                            transition: {duration: 0.5}
+                        }}
                     >
                         <Blob1/>
                         <Wave1/>
                         <Wave3/>
                     </motion.div>
-
-                    {/*<div className={styles.leftContentWrapper}>*/}
-                    {/*    <h2>APPS & WEBSITES</h2>*/}
-                    {/*    <h2>CROSS-PLATFORM</h2>*/}
-                    {/*    <h2>FRONT-END</h2>*/}
-                    {/*    <h2>BACK-END</h2>*/}
-                    {/*</div>*/}
-
                 </motion.div>
             </div>
         </div>
