@@ -7,7 +7,7 @@ import '../App.css'
 const HomeTopLeft = (props) => {
     return (
         <motion.div
-            // className={styles.topContainer}
+            className={styles.homeTopContainer}
             // initial={{
             //     transform: "translateX(-100%)"
             // }}
@@ -20,7 +20,10 @@ const HomeTopLeft = (props) => {
             //     transition: {duration: 0.5}
             // }}
         >
-
+            <div className={styles.textContainer}>
+                <h1>developer</h1>
+                <h4>Full-stack bilingual software developer specialising in web and cross-platform mobile applications.</h4>
+            </div>
             {/*<div className={styles.leftContentWrapper}>*/}
             {/*    <h2>SOFTWARE</h2>*/}
             {/*    <h2>DEVELOPER</h2>*/}

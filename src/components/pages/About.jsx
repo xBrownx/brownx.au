@@ -11,16 +11,7 @@ function About() {
 
     return (
         <motion.div className={styles.mainContainer}>
-        <TopPanelTwo
-                heading={<>andrew<br/>brown</>}
-                className={styles.topPanelContainer}
-                topMiddleContent={<AboutTopMiddle />}
-                topRightContent={<></>}
-                transitionEnterDuration={0.5}
-                transitionEnterDelay={0}
-                transitionExitDuration={0.5}
-                transitionExitDelay={0.4}
-            />
+
             <BottomPanel
                 className={styles.bottomPanelContainer}
                 heading={"MORE ABOUT ME" }
