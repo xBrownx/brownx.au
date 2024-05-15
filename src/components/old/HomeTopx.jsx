@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/home.module.css";
+import styles from "../home/home.module.css";
 import HomeTopMiddle from "../ui/HomeTopMiddle";
 import Circle1 from "../background/Circle-1";
 import Wave2 from "../background/Wave-2";

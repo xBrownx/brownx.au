@@ -1,10 +1,9 @@
 import React from 'react';
-import styles from "../../styles/background.module.css";
 import {ReactComponent as Wave} from "../../assets/background/wave-5.svg";
 
-const Wave3 = () => {
+const Wave3 = (props) => {
     return (
-        <Wave className={styles.wave3} />
+        <Wave className={props.className} />
     );
 };
 

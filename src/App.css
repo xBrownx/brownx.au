@@ -109,6 +109,8 @@ body {
     --heading-font-colour: var(--pastel-purple-4);
 
     --bean-gradient: linear-gradient(180deg, var(--pastel-pink-2) 55%, var(--pastel-orange-3) 100%);
+
+    --shadow-color: #000;
 }
 
 

@@ -1,0 +1,129 @@
+/* BUTTONS */
+.btnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.btn {
+    font-family: var(--main-font);
+    transition: all 300ms ease;
+    font-weight: 600;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn1, .btn2 {
+    border: solid 0.1rem var(--pastel-purple-5);
+}
+
+.btn1:hover,
+.btn2:hover {
+    cursor: pointer;
+}
+
+.btn1,
+.btn2:hover {
+    background-color: var(--pastel-purple-5);
+    color: white;
+}
+
+.btn1:hover {
+    background-color: var(--pastel-purple-5-03);
+    color: var(--pastel-purple-5);
+}
+
+.btn2 {
+    background: none;
+    color: var(--pastel-purple-5);
+}
+
+.btn2:hover {
+    background-color: var(--pastel-purple-5);
+}
+
+/* SOCIALS */
+
+.socialsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon {
+    transition: all 300ms ease;
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+}
+
+.icon:hover {
+    opacity: 0.5;
+}
+
+/* BACKGROUND */
+.swirl1, .wave4, .bean1 {
+    position: absolute;
+    z-index: 1;
+    padding:0;
+    margin: 0;
+    opacity: 50%;
+    filter: drop-shadow(-8px -6px 0px var(--pastel-purple-0));
+    transition: all 300ms ease;
+}
+
+
+
+.wave4 {
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    height: 40%;
+    rotate: -43deg;
+}
+
+.wave4:hover {
+    scale: 1.1;
+    rotate: -58deg;
+}
+
+.bean1 {
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    height: 30%;
+    rotate: 45deg;
+    filter: drop-shadow(-10px 10px 0px var(--pastel-purple-0));
+}
+
+.bean1:hover {
+    scale: 0.8;
+    rotate: 58deg;
+}
+
+.swirl1 {
+    width: 20%;
+    height: 20%;
+    top: 10%;
+    right: 10%;
+    rotate: 45deg;
+}
+
+.swirl1:hover {
+    rotate: 50deg;
+}
+

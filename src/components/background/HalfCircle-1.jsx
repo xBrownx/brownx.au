@@ -1,10 +1,9 @@
 import React from 'react';
-import styles from "../../styles/background.module.css";
 import {motion} from "framer-motion";
 
 const HalfCircle1 = (props) => {
     return (
-        <motion.div className={styles.halfCircle1}
+        <motion.div className={props.className}
             initial={{
                 opacity: 0,
                 transform: "rotateZ(-180deg)",

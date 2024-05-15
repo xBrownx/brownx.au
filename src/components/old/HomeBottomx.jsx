@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "../../styles/home.module.css";
+import styles from "../home/home.module.css";
 import {motion} from "framer-motion";
 import {Link} from "react-router-dom";
 import ph1 from "../../assets/img/ph1.webp";

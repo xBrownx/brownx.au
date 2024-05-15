@@ -26,26 +26,6 @@
     filter: drop-shadow(-8px -6px 0px var(--pastel-purple-0));
 }
 
-.wave3 {
-    z-index: 1;
-    padding:0;
-    opacity: 50%;
-    position: relative;
-    width: 40%;
-    height: 40%;
-    margin: 0;
-    left: 0;
-    top: 0;
-    rotate: -43deg;
-    filter: drop-shadow(-8px -6px 0px var(--pastel-purple-0));
-    transition: all 300ms ease;
-}
-
-.wave3:hover {
-    scale: 1.1;
-    rotate: -58deg;
-}
-
 .wave4 {
     z-index: -1;
     padding:0;
@@ -60,15 +40,7 @@
     filter: drop-shadow(-8px -6px 0px var(--pastel-purple-0));
 }
 
-.bean1 {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin-top: 17%;
-    margin-left: 15%;
-    rotate: 45deg;
-    filter: drop-shadow(-10px 10px 0px var(--pastel-purple-0));
-}
+
 
 .blob1 {
     z-index: -1;
@@ -84,71 +56,6 @@
     justify-self: center;
 }
 
-.backgroundContainer {
-    z-index: 1;
-    position: relative;
-    transition: all 300ms ease;
-}
-
-.backgroundContainer:hover {
-    scale: 1.1;
-    cursor: pointer;
-}
-
-.egg1 {
-    z-index: 1;
-    position: absolute;
-    width: 40%;
-    height: 40%;
-    margin-left: 1%;
-    left: 0;
-    bottom: 1px;
-    rotate: -43deg;
-    filter: drop-shadow(-8px -6px 0px var(--pastel-purple-0));
-    transition: all 300ms ease;
-}
-
-.egg1:hover {
-    scale: 1.1;
-    cursor: pointer;
-}
-
-
-.swirl1 {
-    z-index: -1;
-    padding:0;
-    opacity: 100%;
-    position: absolute;
-    width: 40%;
-    height: 40%;
-    margin-left: 1%;
-    left: 5%;
-    top: 10%;
-    rotate: -43deg;
-    filter: drop-shadow(-8px -6px 0px var(--pastel-purple-0));
-}
-
-.halfCircle1 {
-    z-index: -10;
-    position: absolute;
-    display: flex;
-    height: 70%;
-    width: 60%;
-    bottom: 0;
-    left: 50%;
-    translate: -50%;
-    background: var(--circle-colour);
-    border-top: 16px solid var(--circle-border-fill-colour);
-    border-left: 16px solid var(--circle-border-fill-colour);
-    border-right: 16px solid var(--circle-border-fill-colour);
-    outline: 4px solid var(--circle-border-colour);
-    box-shadow:
-            inset 4px 0px 0 0px var(--circle-border-colour),
-            inset -4px 0px 0 0px var(--circle-border-colour),
-            inset 0px 4px 0 0px var(--circle-border-colour);
-    border-radius: 50% 50% 0 0/100% 100% 0 0;
-}
-
 .circle1Outer {
     display: flex;
     opacity: 20%;
@@ -159,7 +66,7 @@
     background-color: var(--pastel-yellow-2);
     border-radius: 50%;
     border: 10px solid var(--pastel-purple-5);
-    z-index: -10;
+    z-index: 0;
     justify-content: center;
     bottom: -30%;
     left: -20%;
@@ -175,16 +82,3 @@
     border: 10px solid var(--pastel-purple-5);
 }
 
-.circle2{
-    opacity: 75%;
-    position: absolute;
-    display: flex;
-    width:25vh;
-    aspect-ratio: 1;
-    background-color: var(--pastel-purple-0);
-    border-radius: 50%;;
-    z-index: -10;
-    filter: drop-shadow(8px 8px 1px var(--pastel-purple-3));
-    right: 10%;
-    top: 10%;
-}

@@ -1,12 +1,18 @@
 import styles from '../../styles/main.module.css'
 import BottomPanel from "./BottomPanel";
 import TopPanel from "./TopPanel";
+import useMouseShadow from "../ui/MouseShadow";
 
 function MainFrame(props) {
 
+    const shadow = useMouseShadow();
 
     return (
-        <div className={styles.mainContainer}>
+        <div id="mainContainer" className={styles.mainContainer}
+        style={{
+            boxShadow: `${shadow.x}px ${shadow.y}px 10px 10px rgba(56, 125, 255, 0.2)`,
+            transition: `all 300ms ease`
+        }}>
             <TopPanel
                 className={styles.topPanelContainer}
                 content={props.topContent}/>
@@ -17,6 +23,8 @@ function MainFrame(props) {
             />
         </div>
     )
+
+
 }
 
 export default MainFrame;

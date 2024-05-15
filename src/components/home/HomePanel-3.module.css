@@ -1,0 +1,110 @@
+.container {
+    position: relative;
+    display: flex;
+}
+
+.mainImg {
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+    height: 60%;
+    width: auto;
+}
+
+.particlesContainer, .particles {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    background: none;
+}
+
+
+.particles {
+    position: absolute;
+}
+
+.wave1, .egg1, .wave3, .circle2 {
+    position: absolute;
+    transition: all 500ms ease;
+    opacity: 50%;
+    z-index: -2;
+    padding:0;
+    filter: drop-shadow(-8px -6px 0px var(--pastel-purple-0));
+}
+
+.wave1 {
+    width: 60%;
+    height: 60%;
+    right: 0;
+    top: 0;
+    rotate: 45deg;
+    translate: 0 25%;
+}
+
+.wave1:hover {
+
+}
+
+.egg1 {
+    width: 50%;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    translate: -25% -45%;
+    rotate: 20deg;
+}
+
+.wave3 {
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 30%;
+    opacity: 30%;
+    rotate: 120deg;
+}
+
+.wave3:hover {
+    scale: 0.9;
+    rotate: 160deg;
+}
+
+.circle2{
+    opacity: 50%;
+    width:10%;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-color: var(--pastel-purple-0);
+    border-radius: 50%;;
+    filter: drop-shadow(8px 8px 1px var(--pastel-purple-3));
+    right: 0;
+    top: 0;
+    translate: -25% 25%;
+}
+
+.halfCircle1 {
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    height: 70%;
+    width: 60%;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    background: var(--circle-colour);
+    border-top: 16px solid var(--circle-border-fill-colour);
+    border-left: 16px solid var(--circle-border-fill-colour);
+    border-right: 16px solid var(--circle-border-fill-colour);
+    outline: 4px solid var(--circle-border-colour);
+    box-shadow:
+            inset 4px 0px 0 0px var(--circle-border-colour),
+            inset -4px 0px 0 0px var(--circle-border-colour),
+            inset 0px 4px 0 0px var(--circle-border-colour);
+    border-radius: 50% 50% 0 0/100% 100% 0 0;
+}

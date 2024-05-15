@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from "../../styles/background.module.css";
 import {ReactComponent as Blob} from "../../assets/background/blob-1.svg";
-const Blob1 = () => {
+const Blob1 = (props) => {
     return (
-        <Blob className={styles.blob1} />
+        <Blob className={props.className} />
     );
 };
 

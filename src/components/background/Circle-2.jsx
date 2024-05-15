@@ -1,9 +1,8 @@
 import React from 'react';
-import styles from "../../styles/background.module.css";
 
-const Circle2 = () => {
+const Circle2 = (props) => {
     return (
-        <div className={styles.circle2} />
+        <div className={props.className} />
     );
 };
 
