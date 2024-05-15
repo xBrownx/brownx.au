@@ -1,14 +1,14 @@
 import React from 'react';
-import styles from '../styles/about.module.css'
+import styles from '../../styles/about.module.css'
 import {motion} from "framer-motion"
 
-import Circle1 from "./background/Circle-1";
-import Wave2 from "./background/Wave-2";
-import Blob1 from "./background/Blob-1";
-import Wave1 from "./background/Wave-1";
-import Wave3 from "./background/Wave-3";
-import TransformDiv from "./ui/TransformDiv";
-import FadeDiv from "./ui/FadeDiv";
+import Circle1 from "../background/Circle-1";
+import Wave2 from "../background/Wave-2";
+import Blob1 from "../background/Blob-1";
+import Wave1 from "../background/Wave-1";
+import Wave3 from "../background/Wave-3";
+import TransformDiv from "../ui/TransformDiv";
+import FadeDiv from "../ui/FadeDiv";
 
 const AboutTop = (props) => {
     return (

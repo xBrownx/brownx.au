@@ -16,7 +16,7 @@ function App() {
 
         <div className="App">
             <div className='container'>
-                <Navbar/>
+                {/*<Navbar/>*/}
                 <AnimatePresence mode="wait">
                     <Routes location={location} key={location.pathname}>
                         <Route path="/" element={<Home/>}/>

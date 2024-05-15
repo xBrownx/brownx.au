@@ -1,15 +1,15 @@
 import React, {useEffect, useState} from "react";
-import styles from "../styles/home.module.css";
-import ParticlesComponent from "./ui/particles";
-import head1 from "../assets/img/h1.png";
-import head2 from "../assets/img/h2.png";
+import styles from "../../styles/home.module.css";
+import ParticlesComponent from "./particles";
+import head1 from "../../assets/img/h1.png";
+import head2 from "../../assets/img/h2.png";
 import {motion} from "framer-motion"
-import HalfCircle1 from "./background/HalfCircle-1";
-import Blob1 from "./background/Blob-1";
-import Wave1 from "./background/Wave-1";
-import Wave3 from "./background/Wave-3";
-import Swirl1 from "./background/Swirl-1";
-import Wave4 from "./background/Wave-4";
+import HalfCircle1 from "../background/HalfCircle-1";
+import Blob1 from "../background/Blob-1";
+import Wave1 from "../background/Wave-1";
+import Wave3 from "../background/Wave-3";
+import Swirl1 from "../background/Swirl-1";
+import Wave4 from "../background/Wave-4";
 
 const HomeTopMiddle = (props) => {
 
@@ -96,10 +96,60 @@ const HomeTopMiddle = (props) => {
                     toggleHead()
                 }
             />
-            <div className={styles.backgroundContainer}>
+            <motion.div
+                className={styles.backgroundContainer}
+                initial={{
+                    opacity: 0,
+                    transform: "translateY(-100%)",
+                    zIndex: -1
+                }}
+                animate={{
+                    opacity: 1,
+                    transform: "translateY(0)",
+                    transition: {
+                        duration: 0.4,
+                        delay: 0.3
+                    },
+                    zIndex: -1
+                }}
+                exit={{
+                    opacity: 0,
+                    transform: "translateY(-100%)",
+                    transition: {
+                        duration: 0.4,
+                        delay: 0
+                    },
+                    zIndex: -1
+                }}>
                 <Swirl1/>
-                <Wave4 />
-            </div>
+            </motion.div>
+            <motion.div
+                className={styles.backgroundContainer}
+                initial={{
+                    opacity: 0,
+                    transform: "translateY(-100%)",
+                    zIndex: -1
+                }}
+                animate={{
+                    opacity: 1,
+                    transform: "translateY(0)",
+                    transition: {
+                        duration: 0.4,
+                        delay: 0.5
+                    },
+                    zIndex: -1
+                }}
+                exit={{
+                    opacity: 0,
+                    transform: "translateY(-100%)",
+                    transition: {
+                        duration: 0.4,
+                        delay: 0
+                    },
+                    zIndex: -1
+                }}>
+                <Wave4/>
+            </motion.div>
         </motion.div>
     )
 }

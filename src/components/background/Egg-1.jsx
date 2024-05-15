@@ -4,7 +4,9 @@ import {ReactComponent as Egg} from "../../assets/background/egg-3.svg";
 
 const Egg1 = () => {
     return (
-        <Egg className={styles.egg1} />
+        <div className={styles.backgroundContainer}>
+            <Egg className={styles.egg1}/>
+        </div>
     );
 };
 

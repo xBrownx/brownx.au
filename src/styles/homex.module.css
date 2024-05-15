@@ -26,14 +26,14 @@
 }
 
 .topLeftContainer {
-    border-right: 2px solid var(--border-colour);
+    border-right: 4px solid var(--border-colour);
     -webkit-box-shadow: inset -3px -3px 9px 0;
     -moz-box-shadow: inset -3px -3px 9px 0 var(--border-shadow);
     box-shadow: inset -3px -3px 9px 0 var(--border-shadow);
 }
 
 .topRightContainer {
-    border-left: 2px solid var(--border-colour);
+    border-left: 4px solid var(--border-colour);
     -webkit-box-shadow: inset 3px -3px 9px 0;
     -moz-box-shadow: inset 3px -3px 9px 0 var(--border-shadow);
     box-shadow: inset 3px -3px 9px 0 var(--border-shadow);
@@ -48,7 +48,7 @@
     display: block;
     margin: auto;
     position: absolute;
-    left: 50%;
+    left: 49%;
     bottom: 0;
     transform: translateX(-50%);
     z-index: 1;
@@ -57,8 +57,7 @@
 }
 
 .particlesContainer {
-    display: flex;
-    z-index: -1;
+    z-index: 1;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -66,34 +65,25 @@
 }
 
 .particles {
-    display: flex;
-    position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -1;
-}
-
-.particles canvas {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    z-index: 1; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
 }
 
 
 /*==============================================*/
 
 .bottomContainer {
-    position: relative;
     display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding: 0 20px 0 20px;
 }
 
 .bottomWrapper {
-    display: flex;
-    width: 50%;
+    width: 100%;
     height: 100%;
-    padding: 0;
-    justify-content: center;
-    justify-self: center;
 }
 
 .bottomWrapper ul {
@@ -211,35 +201,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    width: 80%;
+    width: 60%;
     font-family: var(--main-font);
     color: #777;height: fit-content;
 }
 
 .textContainer h1 {
-    text-align: center;
-    align-content: end;
-    padding: 10px;
-    margin: 0 0 0 0px;
-    font-size: 4vmin;
-    height: fit-content;
-}
-
-.textContainer h2 {
-    text-align: center;
-    align-content: end;
-    padding: 0px;
-    margin: 0 0 0 0px;
-    font-size: 2vmin;
-    height: fit-content;
-}
-
-.textContainer h3 {
     text-align: start;
     align-content: end;
-    padding: 10px 0 0 5px;
+    padding: 5px;
     margin: 0 0 0 20px;
-    font-size: 1.5vmin;
+    font-size: 4vmin;
     height: fit-content;
 }
 
@@ -252,99 +224,8 @@
     height: fit-content;
 }
 
-.textContainer p {
-    text-align: center;
-    align-content: end;
-    padding: 0px;
-    margin: 0 0 0 0px;
-    font-size: 1.5vmin;
-    height: fit-content;
-}
-
 .backgroundContainer {
-    opacity: 0.3;
-    z-index: -10;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 100%;
     height: 100%;
-    justify-content: center;
-}
-
-
-/* BUTTONS */
-.btnContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1.2rem;
-}
-
-.btn {
-    font-family: var(--main-font);
-    transition: all 300ms ease;
-    font-weight: 600;
-    padding: 1rem;
-    width: 8rem;
-    border-radius: 2rem;
-}
-
-.btn1, .btn2 {
-    border: solid 0.1rem var(--pastel-purple-5);
-}
-
-.btn1:hover,
-.btn2:hover {
-    cursor: pointer;
-}
-
-.btn1,
-.btn2:hover {
-    background-color: var(--pastel-purple-5);
-    color: white;
-}
-
-.btn1:hover {
-    background-color: var(--pastel-purple-5-03);
-    color: var(--pastel-purple-5);
-}
-
-.btn2 {
-    background: none;
-    color: var(--pastel-purple-5);
-}
-
-.btn2:hover {
-    background-color: var(--pastel-purple-5);
-}
-
-/* SOCIALS */
-
-.socialsContainer {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 1rem;
-}
-
-.icon {
-    transition: all 300ms ease;
-    cursor: pointer;
-    height: 2rem;
-    width: 2rem;
-}
-
-.icon:hover {
-    opacity: 0.5;
-}
-
-@media screen and (max-width: 1024px) {
-    .topRightContainer {
-        display: none;
-    }
-    .homeTopContainer {
-        grid-auto-flow: row;
-    }
 }
