@@ -1,5 +1,5 @@
 import styles from '../../styles/main.module.css'
-import Heading from "./Heading";
+import Heading from "../main/Heading";
 import {motion} from "framer-motion"
 
 const BottomPanel = (

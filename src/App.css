@@ -93,6 +93,8 @@ body {
     --navbar-active: var(--pastel-purple-1);
     --navbar-link-hover: var(--pastel-green-2);
 
+    --logo-gradient: linear-gradient(0deg, var(--pastel-pink-2) 55%, var(--pastel-orange-3) 100%);
+
     --border-colour: var(--pastel-purple-5);
     --border-shadow: var(--pastel-purple-5-03);
 

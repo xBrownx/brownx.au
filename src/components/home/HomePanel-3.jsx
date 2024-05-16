@@ -1,19 +1,21 @@
 import React, {useEffect, useState} from 'react';
-import mainStyles from "./home.module.css";
-import styles from "./HomePanel-3.module.css"
 import {motion} from "framer-motion";
+import stylesMain from "./Home.module.css";
+import styles from "./HomePanel-3.module.css"
+
 import head1 from "../../assets/img/h1.png";
 import head2 from "../../assets/img/h2.png";
-import ParticlesComponent from "../ui/particles";
+import {ReactComponent as Wave1} from "../../assets/background/wave-1.svg";
+import {ReactComponent as Egg3} from "../../assets/background/egg-3.svg";
+import {ReactComponent as Wave5} from "../../assets/background/wave-5.svg";
+
 import HalfCircle1 from "../background/HalfCircle-1";
-import Wave4 from "../background/Wave-4";
-import Wave1 from "../background/Wave-1";
-import Swirl1 from "../background/Swirl-1";
-import Egg1 from "../background/Egg-1";
-import Wave3 from "../background/Wave-3";
-import Circle2 from "../background/Circle-2";
-import FadeDiv from "../ui/FadeDiv";
+
 import TransformDiv from "../ui/TransformDiv";
+import FadeDiv from "../ui/FadeDiv";
+import ParticlesComponent from "../ui/particles";
+import Circle2 from "../background/Circle-2";
+
 
 const HomePanel3 = (props) => {
 
@@ -102,7 +104,7 @@ const HomePanel3 = (props) => {
             />
 
             <motion.div
-                className={mainStyles.backgroundContainer}
+                className={stylesMain.backgroundContainer}
 
                 initial={{
                     scale: 0,
@@ -134,7 +136,7 @@ const HomePanel3 = (props) => {
             </motion.div>
 
             <TransformDiv
-                className={mainStyles.backgroundContainer}
+                className={stylesMain.backgroundContainer}
                 initPosition={"translateY(100%)"}
                 animPosition={"translateY(0)"}
                 exitPosition={"translateY(100%)"}
@@ -143,11 +145,11 @@ const HomePanel3 = (props) => {
                 animDelay={0.5}
                 exitDelay={0.1}
             >
-                <Egg1 className={styles.egg1}/>
+                <Egg3 className={styles.egg3}/>
             </TransformDiv>
 
             <TransformDiv
-                className={mainStyles.backgroundContainer}
+                className={stylesMain.backgroundContainer}
                 initPosition={"translateY(-100%)"}
                 animPosition={"translateY(0)"}
                 exitPosition={"translateY(-100%)"}

@@ -1,0 +1,35 @@
+.aboutContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.pieChart {
+    justify-content: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutDetailsContainer {
+    flex: 1;
+    height: fit-content;
+    background: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: start;
+    padding: 4rem 2rem;
+}
+
+.aboutDetailsContainer h1 {
+    text-align: left;
+    align-items: start;
+    padding-top: 0.5rem;
+}
+
+.aboutDetailsContainer h2 {
+    text-align: left;
+    align-items: start;
+}

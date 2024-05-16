@@ -1,14 +1,14 @@
 <svg id="bean-1" xmlns="http://www.w3.org/2000/svg" width="271" height="164" viewBox="0 0 271 164">
   <defs>
 
-    <linearGradient   x1='0%' y1='0%' x2='75%' y2='0%' id='bgGradient' >
+    <linearGradient   x1='0%' y1='0%' x2='75%' y2='0%' id='bean1Gradient' >
       <stop offset='0%' stop-color='#B4F7ED'  />
       <stop offset='75%'  stop-color='#f9f8f2'  />
     </linearGradient>
 
     <style>
       .bean-1 {
-        fill: url(#bgGradient);
+        fill: url(#bean1Gradient);
         stroke: none';
         stroke-linecap: round;
         stroke-linejoin: round;

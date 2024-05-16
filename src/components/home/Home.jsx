@@ -1,10 +1,9 @@
 import React from 'react';
+import styles from "./Home.module.css";
 import MainFrame from "../main/MainFrame";
-import HomePanel3 from "../home/HomePanel-3";
-import styles from "../home/home.module.css";
-import HomePanel1 from "../home/HomePanel-1";
-import HomePanel2 from "../home/HomePanel-2";
-
+import HomePanel1 from "./HomePanel-1";
+import HomePanel2 from "./HomePanel-2";
+import HomePanel3 from "./HomePanel-3";
 
 function Home() {
 
@@ -18,7 +17,6 @@ function Home() {
                         </div>
                     </div>
                 }
-                bottomHeading={"CHECK MY WORK"}
                 bottomContent={<HomePanel3/>}
             />
     );

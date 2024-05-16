@@ -76,7 +76,7 @@ a {
 }
 
 /* BACKGROUND */
-.swirl1, .wave4, .bean1 {
+.swirl1, .wave6, .bean1 {
     position: absolute;
     z-index: 1;
     padding:0;
@@ -86,9 +86,7 @@ a {
     transition: all 300ms ease;
 }
 
-
-
-.wave4 {
+.wave6 {
     right: 0;
     bottom: 0;
     width: 40%;
@@ -96,7 +94,7 @@ a {
     rotate: -43deg;
 }
 
-.wave4:hover {
+.wave6:hover {
     scale: 1.1;
     rotate: -58deg;
 }

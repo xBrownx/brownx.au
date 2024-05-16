@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import styles from "../home/home.module.css";
+import styles from "../home/Home.module.css";
 import ParticlesComponent from "./particles";
 import head1 from "../../assets/img/h1.png";
 import head2 from "../../assets/img/h2.png";

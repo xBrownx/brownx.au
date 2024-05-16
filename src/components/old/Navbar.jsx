@@ -12,7 +12,7 @@ function Navbar() {
                 <Link to='/' className={styles.siteTitle}>
                     <Logo
                         className={styles.logo}
-                        fill='var(--navbar-text-colour)'/>
+                        />
                 </Link>
 
                 <ul>

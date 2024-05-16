@@ -1,15 +1,12 @@
 import React from 'react';
-import styles from "../home/home.module.css";
+import styles from "../home/Home.module.css";
 import {motion} from "framer-motion";
 import {Link} from "react-router-dom";
 import ph1 from "../../assets/img/ph1.webp";
 import ph2 from "../../assets/img/ph2.jpg";
 import ph3 from "../../assets/img/ph3.jpg";
 import ph4 from "../../assets/img/ph6.jpg";
-import Blob1 from "../background/Blob-1";
-import Wave1 from "../background/Wave-1";
-import Wave3 from "../background/Wave-3";
-import Egg1 from "../background/Egg-1";
+
 
 const HomeBottom = () => {
     return (
@@ -57,9 +54,7 @@ const HomeBottom = () => {
             <motion.div
                 className={styles.backgroundContainer}
             >
-                <Egg1/>
-                <Wave1/>
-                <Wave3/>
+
             </motion.div>
         </motion.div>
     );

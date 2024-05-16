@@ -1,17 +1,18 @@
 import React from "react";
-import stylesMain from "./home.module.css";
+import {Link} from "react-router-dom";
+import stylesMain from "./Home.module.css";
 import styles from "./HomePanel-2.module.css"
+
 import {ReactComponent as LinkedIn} from '../../assets/icons/linkedin.svg';
 import {ReactComponent as Github} from '../../assets/icons/github.svg';
 import {ReactComponent as Email} from '../../assets/icons/email.svg';
-import Wave3 from "../background/Wave-3";
+import {ReactComponent as Swirl1} from "../../assets/background/swirl-1.svg";
+import {ReactComponent as Bean1} from "../../assets/background/bean-1.svg";
+import {ReactComponent as Wave6} from "../../assets/background/wave-6.svg";
+
 import TransformDiv from "../ui/TransformDiv";
 import FadeDiv from "../ui/FadeDiv";
-import {Link} from "react-router-dom";
-import Bean1 from "../background/Bean-1";
-import Wave1 from "../background/Wave-1";
-import Wave4 from "../background/Wave-4";
-import Swirl1 from "../background/Swirl-1";
+
 
 const HomePanel2 = (props) => {
     return (
@@ -64,7 +65,7 @@ const HomePanel2 = (props) => {
                         animDelay={0}
                         exitDelay={0.5}
                     >
-                        <Wave4 className={styles.wave4}/>
+                        <Wave6 className={styles.wave6}/>
                         <Swirl1 className={styles.swirl1}/>
                         <Bean1 className={styles.bean1}/>
                     </TransformDiv>

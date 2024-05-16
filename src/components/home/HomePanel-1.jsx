@@ -1,16 +1,22 @@
 import React from "react";
-import stylesMain from "./home.module.css";
+
+import stylesMain from "./Home.module.css";
 import styles from "./HomePanel-1.module.css";
-import Wave2 from "../background/Wave-2";
+
 import TransformDiv from "../ui/TransformDiv";
 import FadeDiv from "../ui/FadeDiv";
+
+import {ReactComponent as Brownx} from "../../assets/img/logo.svg";
+import {ReactComponent as Blob1} from "../../assets/background/blob-1.svg";
+import {ReactComponent as Wave2} from "../../assets/background/wave-2.svg";
+
+import Tick from "../../assets/icons/circle-tick.svg";
+
 import Circle1 from "../background/Circle-1";
-import Egg1 from "../background/Egg-1";
-import Blob1 from "../background/Blob-1";
+
 
 const HomePanel1 = () => {
     return (
-
         <TransformDiv
             className={stylesMain.topLeftContainer}
             initPosition={"translateX(-100%)"}
@@ -21,44 +27,91 @@ const HomePanel1 = () => {
             animDelay={0}
             exitDelay={0.5}
         >
-            <FadeDiv
-                className={stylesMain.textContainer}
-                animDuration={0.5}
-                exitDuration={0.5}
-                animDelay={0.5}
-                exitDelay={0}
-            >
-                <h3>&lt;/&gt; front-end </h3>
-                <h3>&lt;/&gt; back-end </h3>
-                <h3>&lt;/&gt; mobile </h3>
-                <h3>&lt;/&gt; web </h3>
-                <h3>&lt;/&gt; front-end </h3>
-                {/*<h3>&lt;/&gt; developer </h3>*/}
-                {/*<h4>Full-stack bilingual software developer specialising in web and cross-platform mobile*/}
-                {/*    applications.</h4>*/}
-                {/*<h3>&lt;/&gt; analyst </h3>*/}
-                {/*<h4>Data Scientist with expertise in business analysis, data cleansing, dashboard design and*/}
-                {/*    development.</h4>*/}
-                {/*<h3>&lt;/&gt; amateur designer </h3>*/}
-                {/*<h4>Data Scientist with expertise in business analysis, data cleansing, dashboard design and*/}
-                {/*    development.</h4>*/}
+            <div className={styles.wrapper}>
 
-            </FadeDiv>
+                <TransformDiv
+                    className={styles.wrapper}
+                    initPosition={"translateY(-100%)"}
+                    animPosition={"translateY(0)"}
+                    exitPosition={"translateY(-100%)"}
+                    animDuration={0.5}
+                    exitDuration={0.5}
+                    animDelay={0.5}
+                    exitDelay={0}
+                >
+                    <Brownx className={styles.brownx}/>
+                </TransformDiv>
 
-            <TransformDiv
-                className={stylesMain.backgroundContainer}
-                initPosition={"translateX(100%)"}
-                animPosition={"translateX(0)"}
-                exitPosition={"translateX(100%)"}
-                animDuration={0.5}
-                exitDuration={0.5}
-                animDelay={0}
-                exitDelay={0.5}
-            >
-                <Circle1 className={styles.circle1}/>
-                <Wave2 className={styles.wave2}/>
-                <Blob1 className={styles.blob1}/>
-            </TransformDiv>
+                <FadeDiv
+                    className={styles.articleContainer}
+                    animDuration={0.5}
+                    exitDuration={0.5}
+                    animDelay={0.5}
+                    exitDelay={0}
+                >
+
+                    <article>
+                        <img
+                            src={Tick}
+                            alt="experience icon"
+                            className={styles.icon}
+                        />
+                        <div>
+                            <h3>Mobile</h3>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img
+                            src={Tick}
+                            alt="experience icon"
+                            className={styles.icon}
+                        />
+                        <div>
+                            <h3>Web</h3>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img
+                            src={Tick}
+                            alt="experience icon"
+                            className={styles.icon}
+                        />
+                        <div>
+                            <h3>Frontend</h3>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img
+                            src={Tick}
+                            alt="experience icon"
+                            className={styles.icon}
+                        />
+                        <div>
+                            <h3>Backend</h3>
+                        </div>
+                    </article>
+
+
+                </FadeDiv>
+
+                <TransformDiv
+                    className={stylesMain.backgroundContainer}
+                    initPosition={"translateX(100%)"}
+                    animPosition={"translateX(0)"}
+                    exitPosition={"translateX(100%)"}
+                    animDuration={0.5}
+                    exitDuration={0.5}
+                    animDelay={0}
+                    exitDelay={0.5}
+                >
+                    <Circle1 className={styles.circle1}/>
+                    <Wave2 className={styles.wave2}/>
+
+                </TransformDiv>
+            </div>
         </TransformDiv>
     );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/about.module.css'
+import styles from '../about/About.module.css'
 import {motion} from "framer-motion"
 import {Link, useMatch, useResolvedPath} from "react-router-dom";
 

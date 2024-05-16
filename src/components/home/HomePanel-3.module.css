@@ -30,7 +30,7 @@
     position: absolute;
 }
 
-.wave1, .egg1, .wave3, .circle2 {
+.wave1, .egg3, .wave3, .circle2 {
     position: absolute;
     transition: all 500ms ease;
     opacity: 50%;
@@ -52,7 +52,7 @@
 
 }
 
-.egg1 {
+.egg3 {
     width: 50%;
     height: 50%;
     left: 0;
